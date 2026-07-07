@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quantlab"
+version = "0.1.0"
+description = "A quantitative finance toolkit built from first principles."
+authors = [
+    { name = "Prajwal" }
+]
+requires-python = ">=3.10"
+
+dependencies = [
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "yfinance",
+]
+
+[tool.setuptools]
+packages = ["quantlab"]
+
+[tool.setuptools.package-dir]
+quantlab = "quantlab"
